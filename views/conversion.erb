@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate</title>
+</head>
+<body>
+
+<h1>Convert <%= params.fetch("currency_one")%> to <%= params.fetch("currency_two")%></h1>
+
+
+<p>
+1 <%= params.fetch("currency_one") %> equals <%= @converted %> <%= params.fetch("currency_two")%>
+</p>
+
+<p><a href=/<%= params.fetch("currency_two") %>>Go Back</a></p>
+  
+</body>
+</html>
