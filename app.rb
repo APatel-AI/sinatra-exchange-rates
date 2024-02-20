@@ -25,3 +25,11 @@ get("/") do
   @currency_abbreviation = raw_currencies.keys
  erb(:homepage)
 end
+
+
+get("/:currency_one") do
+  @currencies = raw_currencies.values
+  @currency_abbreviation = raw_currencies.keys
+
+  erb(:currency_template)
+end

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exchange</title>
+  </head>
+  <body>
+
+    <h1>Convert <%= params.fetch("currency_one") %></h1>
+
+    <p><a href=/ >Go Back</a></p>
+
+    <ul>
+      <% @currency_abbreviation.each do |currency| %>
+        <li>
+          <a href = /<%= params.fetch("currency_one")%>/<%=currency%>> Convert 1 <%= params.fetch("currency_one") %> to <%= currency%>
+        </li>
+
+          <%end%>
+
+        </ul>
+
+      </body>
+    </html>
